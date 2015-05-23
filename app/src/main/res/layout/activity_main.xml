@@ -20,17 +20,17 @@
         android:id="@+id/stand"
         android:src="@drawable/gallows1"
         android:longClickable="true"
-        android:layout_alignTop="@+id/title"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="match_parent"
+    <EditText
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/input"
-        android:layout_alignTop="@+id/solution"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/solution"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/solution"
         android:textSize="14pt"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="275dp" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
